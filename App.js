@@ -9,15 +9,19 @@ import {
   useDimensions,
   useDeviceOrientation,
 } from "@react-native-community/hooks";
-import WelcomeScreen from "./app/screens/WelcomeScreen";
-import ViewImageScreen from "./app/screens/ViewImageScreen";
 
-import AppText from "./app/components/AppText";
-import Listingdetailsscreen from "./app/screens/ListingDetailsScreen";
-import Messagesscreen from "./app/screens/MessagesScreen";
+import Screen from "./app/components/Screen";
+import Icon from "./app/components/Icon";
+import ListItem from "./app/components/ListItem";
+
+import AccountScreen from "./app/screens/AccountScreen";
 
 export default function App() {
-  return <Messagesscreen />;
+  return (
+    <Screen>
+      <AccountScreen />
+    </Screen>
+  );
 }
 
 const styles = StyleSheet.create({
